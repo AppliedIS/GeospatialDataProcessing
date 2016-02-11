@@ -14,7 +14,7 @@ cat > $2/results_manifest.json << EOF
   "output_data": [{
     "name": "b1-coastal",
     "file": {
-        "path": "$2/${NM}_B1.tif",
+        "path": "$2/${NM}_B1.TIF",
         "geo_metadata": {
             "data_started": "${DATE_STARTED}"
         }
@@ -22,7 +22,7 @@ cat > $2/results_manifest.json << EOF
   }, {
     "name": "b2-blue",
     "file": {
-        "path": "$2/${NM}_B2.tif",
+        "path": "$2/${NM}_B2.TIF",
         "geo_metadata": {
             "data_started": "${DATE_STARTED}"
         }
@@ -30,7 +30,7 @@ cat > $2/results_manifest.json << EOF
   }, {
     "name": "b3-green",
     "file": {
-        "path": "$2/${NM}_B3.tif",
+        "path": "$2/${NM}_B3.TIF",
         "geo_metadata": {
             "data_started": "${DATE_STARTED}"
         }
@@ -38,7 +38,7 @@ cat > $2/results_manifest.json << EOF
   }, {
     "name": "b4-red",
     "file": {
-       "path": "$2/${NM}_B4.tif",
+       "path": "$2/${NM}_B4.TIF",
        "geo_metadata": {
            "data_started": "${DATE_STARTED}"
        }
@@ -46,7 +46,7 @@ cat > $2/results_manifest.json << EOF
   }, {
     "name": "b5-nir",
     "file": {
-      "path": "$2/${NM}_B5.tif",
+      "path": "$2/${NM}_B5.TIF",
       "geo_metadata": {
           "data_started": "${DATE_STARTED}"
       }
@@ -54,7 +54,7 @@ cat > $2/results_manifest.json << EOF
   }, {
      "name": "b6-swir1",
      "file": {
-         "path": "$2/${NM}_B6.tif",
+         "path": "$2/${NM}_B6.TIF",
          "geo_metadata": {
              "data_started": "${DATE_STARTED}"
          }
@@ -62,7 +62,7 @@ cat > $2/results_manifest.json << EOF
   }, {
     "name": "b7-swir2",
     "file": {
-      "path": "$2/${NM}_B7.tif",
+      "path": "$2/${NM}_B7.TIF",
       "geo_metadata": {
           "data_started": "${DATE_STARTED}"
       }
@@ -70,7 +70,7 @@ cat > $2/results_manifest.json << EOF
   }, {
     "name": "b8-panchromatic",
     "file": {
-        "path": "$2/${NM}_B8.tif",
+        "path": "$2/${NM}_B8.TIF",
         "geo_metadata": {
             "data_started": "${DATE_STARTED}"
         }
@@ -78,7 +78,7 @@ cat > $2/results_manifest.json << EOF
   }, {
     "name": "b9-cirrus",
     "file": {
-     "path": "$2/${NM}_B9.tif",
+     "path": "$2/${NM}_B9.TIF",
      "geo_metadata": {
          "data_started": "${DATE_STARTED}"
      }
@@ -86,7 +86,7 @@ cat > $2/results_manifest.json << EOF
   }, {
     "name": "b10-tir1",
     "file": {
-        "path": "$2/${NM}_B10.tif",
+        "path": "$2/${NM}_B10.TIF",
         "geo_metadata": {
             "data_started": "${DATE_STARTED}"
         }
@@ -94,7 +94,7 @@ cat > $2/results_manifest.json << EOF
   }, {
     "name": "b11-tir2",
     "file": {
-        "path": "$2/${NM}_B11.tif",
+        "path": "$2/${NM}_B11.TIF",
         "geo_metadata": {
             "data_started": "${DATE_STARTED}"
         }
