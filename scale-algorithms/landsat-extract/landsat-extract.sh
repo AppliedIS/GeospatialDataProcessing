@@ -104,8 +104,7 @@ cat > $2/results_manifest.json << EOF
     "filename": "$1",
     "file-types": ["landsat","msi","pan","tir"],
     "geo_metadata": {
-        "data_started": "${DATE_STARTED}",
-        "geo_json": ${GEO}
+        "data_started": "${DATE_STARTED}"
     }}
   ]
 }
