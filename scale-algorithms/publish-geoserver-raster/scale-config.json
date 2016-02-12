@@ -1,0 +1,37 @@
+{
+  "import": {
+    "job_types": [{
+      "name": "publish-geoserver-raster",
+      "version": "1.0.0",
+      "title": "Publish GeoServer Raster",
+      "description": "Pushes GeoTIFF to custom web service that ingests data into GeoServer",
+      "category": "Common",
+      "author_name": "Chris Dickman, Applied Information Sciences",
+      "author_url": "http://www.appliedis.com",
+      "is_operational": true,
+      "icon_code": "f0ee",
+      "docker_privileged": false,
+      "docker_image": "10.4.4.10:5000/publish-geoserver-raster:dev",
+      "priority": 1,
+      "timeout": 3600,
+      "max_tries": 3,
+      "cpus_required": 1.0,
+      "mem_required": 512.0,
+      "disk_out_const_required": 2048.0,
+      "disk_out_mult_required": 0.0,
+      "interface": {
+        "output_data": [],
+        "shared_resources": [],
+        "command_arguments": "${geostiff}",
+        "input_data": [{
+          "media_types": ["image/tiff"],
+          "required": true,
+          "type": "file",
+          "name": "geotiff"
+        }],
+        "version": "1.0",
+        "command": "publish-geoserver-raster.sh"
+      }
+    }]
+  }
+}
