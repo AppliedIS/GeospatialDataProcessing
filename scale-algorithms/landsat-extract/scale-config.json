@@ -2,7 +2,7 @@
   "import": {
     "job_types": [{
       "name": "landsat-extract",
-      "version": "1.0.0",
+      "version": "dev",
       "title": "Landsat Extract",
       "description": "Extract Landsat GeoTIFF files in tar.gz archives",
       "category": "Landsat",
