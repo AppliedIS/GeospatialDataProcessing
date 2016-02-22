@@ -22,7 +22,7 @@
       "interface": {
         "output_data": [],
         "shared_resources": [],
-        "command_arguments": "${geostiff}",
+        "command_arguments": "${geotiff}",
         "input_data": [{
           "media_types": ["image/tiff"],
           "required": true,
