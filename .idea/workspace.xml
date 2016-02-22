@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d401747c-fced-465d-9279-a93ba36c33aa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/Dockerfile" afterPath="$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/Dockerfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scale-algorithms/landsat-rgb/scale-config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scale-algorithms/landsat-extract/Dockerfile" afterPath="$PROJECT_DIR$/scale-algorithms/landsat-extract/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/scale-config.json" afterPath="$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/scale-config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="GeospatialDataProcessing.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,28 +27,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="scale-config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-extract/scale-config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="1" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scale-config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/scale-config.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-ndwi/Dockerfile">
+      <file leaf-file-name="landsat-rgb.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-rgb/landsat-rgb.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -54,64 +37,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="publish-geoserver-raster.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/publish-geoserver-raster.sh">
+      <file leaf-file-name="scale-config.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-rgb/scale-config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.5555556">
-              <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.5735294">
+              <caret line="26" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/Dockerfile">
+      <file leaf-file-name="scale-config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-extract/scale-config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06646972">
-              <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+            <state vertical-scroll-proportion="-15.625">
+              <caret line="25" column="9" selection-start-line="20" selection-start-column="24" selection-end-line="25" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-hotspots/Dockerfile">
+      <file leaf-file-name="scale-config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/scale-config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-base/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="landsat-extract.sh" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-extract/landsat-extract.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="6.428571">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-extract/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.2222223">
-              <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+            <state vertical-scroll-proportion="-15.0">
+              <caret line="24" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -130,13 +80,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scale-algorithms/landsat-extract/Dockerfile" />
         <option value="$PROJECT_DIR$/scale-algorithms/landsat-extract/results.json" />
         <option value="$PROJECT_DIR$/scale-algorithms/landsat-extract/landsat-extract.sh" />
         <option value="$PROJECT_DIR$/scale-algorithms/landsat-extract/landsat-extract-config.json" />
         <option value="$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/publish-geoserver-raster.sh" />
-        <option value="$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/scale-config.json" />
         <option value="$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/Dockerfile" />
+        <option value="$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/scale-config.json" />
+        <option value="$PROJECT_DIR$/scale-algorithms/landsat-extract/Dockerfile" />
+        <option value="$PROJECT_DIR$/scale-algorithms/landsat-rgb/scale-config.json" />
       </list>
     </option>
   </component>
@@ -209,6 +160,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="publish-geoserver-raster" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeospatialDataProcessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GeospatialDataProcessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scale-algorithms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="landsat-rgb" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -785,12 +754,12 @@
       <option name="number" value="Default" />
       <updated>1454947001367</updated>
       <workItem from="1454947002864" duration="16000" />
-      <workItem from="1455051595641" duration="9488000" />
+      <workItem from="1455051595641" duration="13771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9504000" />
+    <option name="totallyTimeSpent" value="13787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="801" extended-state="0" />
@@ -840,7 +809,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -862,21 +831,34 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-extract/landsat-extract.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.428571">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-ndwi/landsat_ndwi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-ndwi/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/publish-geoserver-raster.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.022156574">
+          <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06646972">
+          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -897,31 +879,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-extract/landsat-extract.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.5555556">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-extract/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2222223">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.088626295">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-extract/scale-config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="1" column="13" selection-start-line="0" selection-start-column="0" selection-end-line="90" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/scale-config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-ndwi/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-rgb/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -929,18 +906,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/publish-geoserver-raster.sh">
+    <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-rgb/landsat-rgb.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.5555556">
-          <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/scale-algorithms/publish-geoserver-raster/scale-config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06646972">
-          <caret line="3" column="5" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="5" />
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="24" column="35" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-extract/scale-config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.625">
+          <caret line="25" column="9" selection-start-line="20" selection-start-column="24" selection-end-line="25" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scale-algorithms/landsat-rgb/scale-config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5735294">
+          <caret line="26" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="1" />
           <folding />
         </state>
       </provider>

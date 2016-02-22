@@ -1,5 +1,5 @@
 FROM landsat-base
 MAINTAINER Chris Dickman <chris.dickman@appliedis.com>
 
-COPY landsat-extract.sh ./
+COPY landsat-rgb.sh ./
 ENTRYPOINT ["./landsat-extract.sh"]
