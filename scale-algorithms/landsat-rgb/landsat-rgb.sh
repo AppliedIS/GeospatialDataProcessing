@@ -48,6 +48,7 @@ gdalwarp -t_srs EPSG:3857 "${blue_inputfile}" /tmp/data/"${blue_filename}"_PROJE
 gdalwarp -t_srs EPSG:3857 "${green_inputfile}" /tmp/data/"${green_filename}"_PROJECTED.TIF
 gdalwarp -t_srs EPSG:3857 "${red_inputfile}" /tmp/data/"${red_filename}"_PROJECTED.TIF
 # Combine bands into one RGB image
+ls /tmp/data/"${red_filename}"_PROJECTED.TIF
 convert -combine /tmp/data/"${red_filename}"_PROJECTED.TIF /tmp/data/"${green_filename}"_PROJECTED.TIF /tmp/data/"${blue_filename}"_PROJECTED.TIF /tmp/data/"${base_filename}"_RGB.TIF
 # Adjust image color
 convert -channel B -gamma 0.975 -channel G -gamma 0.99 -channel RGB -sigmoidal-contrast 50x13% /tmp/data/"${base_filename}"_RGB.TIF /tmp/data/"${base_filename}"_RGB_CORRECTED.TIF
