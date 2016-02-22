@@ -67,7 +67,7 @@ cat > "${@: -1}"/results_manifest.json << EOF
   "output_data": [{
     "name": "landsat-rgb",
     "file": {
-        "path": "\"${@: -1}\"/\"${base_filename}\"_RGB_CORRECTED_8bit.TIF"
+        "path": "${@: -1}/${base_filename}_RGB_CORRECTED_8bit.TIF"
     }
   }]
 }
