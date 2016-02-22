@@ -59,3 +59,17 @@ mv "${red_filename}"_PROJECTED.tfw "${base_filename}"_RGB_CORRECTED_8bit.tfw
 gdal_edit.py -a_srs EPSG:3857 "${base_filename}"_RGB_CORRECTED_8bit.TIF
 # Toss all input files
 ls | grep -v _8bit.TIF | xargs rm
+
+mv "${base_filename}"_RGB_CORRECTED_8bit.TIF $4/"${base_filename}"_RGB_CORRECTED_8bit.TIF
+
+cat > $4/results_manifest.json << EOF
+{ "version": "1.1",
+  "output_data": [{
+    "name": "landsat-rgb",
+    "file": {
+        "path": "$4/\"${base_filename}\"_RGB_CORRECTED_8bit.TIF"
+    }
+  }]
+}
+EOF
+cat -n $4/results_manifest.json
