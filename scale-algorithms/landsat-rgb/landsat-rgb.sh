@@ -40,8 +40,14 @@ green_filename="${green_file%.*}"
 blue_file=$(basename "${blue_inputfile}")
 blue_filename="${blue_file%.*}"
 
+echo "${red_filename}"
+echo "${green_filename}"
+echo "${blue_filename}"
+
 # Extract base filename without band or extension
 base_filename="${red_file%_*}"
+
+echo "${base_filename}"
 
 # Reproject images
 gdalwarp -t_srs EPSG:3857 "${blue_inputfile}" "${blue_filename}"_PROJECTED.TIF
