@@ -28,6 +28,10 @@ while getopts ":r::g::b:" opt; do
     esac
 done
 
+# create and switch into temp directory
+mkdir /tmp/data
+cd /tmp/data
+
 # Extract filenames without extensions
 red_file=$(basename "${red_inputfile}")
 red_filename="${red_file%.*}"
