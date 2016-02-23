@@ -53,7 +53,7 @@ echo ${green_filename}
 echo ${blue_filename}
 
 # Combine bands into one RGB image
-convert -combine *.TIF ${base_filename}_RGB.TIF
+convert ${red_filename}_PROJECTED.TIF ${green_filename}_PROJECTED.TIF ${blue_filename}_PROJECTED.TIF -channel RGB -combine ${base_filename}_RGB.TIF
 
 # Adjust image color
 convert -channel B -gamma 0.975 -channel G -gamma 0.99 -channel RGB -sigmoidal-contrast 50x13% ${base_filename}_RGB.TIF ${base_filename}_RGB_CORRECTED.TIF
