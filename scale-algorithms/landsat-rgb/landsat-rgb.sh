@@ -48,20 +48,16 @@ gdalwarp -t_srs EPSG:3857 ${blue_inputfile} ${blue_filename}_PROJECTED.TIF
 gdalwarp -t_srs EPSG:3857 ${green_inputfile} ${green_filename}_PROJECTED.TIF
 gdalwarp -t_srs EPSG:3857 ${red_inputfile} ${red_filename}_PROJECTED.TIF
 
-echo ${red_filename}
-echo ${green_filename}
-echo ${blue_filename}
-
 # Combine bands into one RGB image
-convert ${red_filename}_PROJECTED.TIF ${green_filename}_PROJECTED.TIF ${blue_filename}_PROJECTED.TIF -channel RGB -combine ${base_filename}_RGB.TIF
+convert ${red_filename}_PROJECTED.TIF ${green_filename}_PROJECTED.TIF ${blue_filename}_PROJECTED.TIF -channel RGB -combine imagecopy.TIF
+
+echo ls *.TIF
 
 # Adjust image color
 convert -channel B -gamma 0.975 -channel G -gamma 0.99 -channel RGB -sigmoidal-contrast 50x13% ${base_filename}_RGB.TIF ${base_filename}_RGB_CORRECTED.TIF
 
 # Convert to 8 bit image
 convert -depth 8 ${base_filename}_RGB_CORRECTED.TIF ${base_filename}_RGB_CORRECTED_8bit.TIF
-
-echo ls *.TIF
 
 # Retrieve geo data from base image and reapply it to the corrected 8-bit RGB image
 listgeo -tfw ${red_filename}_PROJECTED.TIF
