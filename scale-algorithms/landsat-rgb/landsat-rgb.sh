@@ -44,7 +44,6 @@ blue_filename=${blue_file%.*}
 base_filename=${red_file%_*}
 
 # Reproject images
-<<<<<<< HEAD
 gdalwarp -t_srs EPSG:3857 ${blue_inputfile} ${blue_filename}_PROJECTED.TIF
 gdalwarp -t_srs EPSG:3857 ${green_inputfile} ${green_filename}_PROJECTED.TIF
 gdalwarp -t_srs EPSG:3857 ${red_inputfile} ${red_filename}_PROJECTED.TIF
@@ -53,13 +52,7 @@ echo ls *.TIF
 
 # Combine bands into one RGB image
 convert -combine ${red_filename}_PROJECTED.TIF ${green_filename}_PROJECTED.TIF ${blue_filename}_PROJECTED.TIF ${base_filename}_RGB.TIF
-=======
-gdalwarp -t_srs EPSG:3857 ${blue_inputfile} /tmp/data/${blue_filename}_PROJECTED.TIF
-gdalwarp -t_srs EPSG:3857 ${green_inputfile} /tmp/data/${green_filename}_PROJECTED.TIF
-gdalwarp -t_srs EPSG:3857 ${red_inputfile} /tmp/data/${red_filename}_PROJECTED.TIF
-# Combine bands into one RGB image
-convert -combine /tmp/data/${red_filename}_PROJECTED.TIF /tmp/data/${green_filename}_PROJECTED.TIF /tmp/data/${blue_filename}_PROJECTED.TIF /tmp/data/${base_filename}_RGB.TIF
->>>>>>> ec8fefee7534e2bcbccf3a20b6a2b6124facbaa4
+
 # Adjust image color
 convert -channel B -gamma 0.975 -channel G -gamma 0.99 -channel RGB -sigmoidal-contrast 50x13% ${base_filename}_RGB.TIF ${base_filename}_RGB_CORRECTED.TIF
 # Convert to 8 bit image
