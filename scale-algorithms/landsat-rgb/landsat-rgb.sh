@@ -48,6 +48,10 @@ gdalwarp -t_srs EPSG:3857 ${blue_inputfile} ${blue_filename}_PROJECTED.TIF
 gdalwarp -t_srs EPSG:3857 ${green_inputfile} ${green_filename}_PROJECTED.TIF
 gdalwarp -t_srs EPSG:3857 ${red_inputfile} ${red_filename}_PROJECTED.TIF
 
+echo ${red_filename}
+echo ${green_filename}
+echo ${blue_filename}
+
 # Combine bands into one RGB image
 convert -combine ${red_filename}_PROJECTED.TIF ${green_filename}_PROJECTED.TIF ${blue_filename}_PROJECTED.TIF ${base_filename}_RGB.TIF
 
