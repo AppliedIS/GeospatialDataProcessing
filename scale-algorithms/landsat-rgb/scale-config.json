@@ -10,7 +10,7 @@
       "author_url": "http://www.appliedis.com",
       "is_operational": true,
       "icon_code": "f03e",
-      "docker_privileged": false,
+      "docker_privileged": true,
       "docker_image": "10.4.4.10:5000/landsat-rgb:dev",
       "priority": 1,
       "timeout": 3600,
@@ -27,7 +27,7 @@
           "name": "landsat-rgb"
         }],
         "shared_resources": [],
-        "command_arguments": "-r ${red} -g ${green} -b ${blue}",
+        "command_arguments": "-r ${red} -g ${green} -b ${blue} ${job_output_dir}",
         "input_data": [{
           "media_types": ["image/tiff"],
           "required": true,
