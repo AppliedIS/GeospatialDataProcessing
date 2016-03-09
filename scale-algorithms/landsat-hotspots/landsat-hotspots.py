@@ -74,7 +74,7 @@ for line in range(numLines):
 
         pixel = 0
         # Be careful of zero divide
-        if hotspots == 0 or hotspots < 23000 or hotspots > 23500 :
+        if hotspots == 0 or hotspots < 24000 or hotspots > 24500 :
             pixel = 0
         else:
             pixel = hotspots
